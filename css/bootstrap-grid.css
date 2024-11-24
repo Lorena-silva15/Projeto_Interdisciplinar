@@ -65,8 +65,8 @@
 .row > * {
   box-sizing: border-box;
   flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
+  
+  max-width: fit-content;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
@@ -692,7 +692,7 @@
   }
   .col-lg-10 {
     flex: 0 0 auto;
-    width: 83.33333333%;
+    width: fit-content;
   }
   .col-lg-11 {
     flex: 0 0 auto;
