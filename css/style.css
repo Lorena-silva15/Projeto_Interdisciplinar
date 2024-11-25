@@ -2936,7 +2936,7 @@ a{
 
 #prompt {
   z-index: 20;
-  font-size: 2em;
+  font-size: 5vw; /* Tamanho da fonte responsivo baseado na largura da viewport */
   font-weight: bold;
   transition: 300ms ease-in-out;
   position: absolute;
@@ -2947,6 +2947,18 @@ a{
   color: rgb(255, 255, 255);
   text-align: center;
   word-wrap: break-word; /* Quebra de linha para títulos longos */
+}
+
+@media (max-width: 768px) {
+  #prompt {
+    font-size: 8vw; /* Ajusta o tamanho da fonte para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  #prompt {
+    font-size: 10vw; /* Ajusta ainda mais para dispositivos muito pequenos */
+  }
 }
 
 
@@ -3303,6 +3315,21 @@ a{
   display: inline-block; /* Mantém espaçamento correto no botão */
   margin-top: 15px; /* Espaçamento superior para separar do título */
   transition: background-color 0.3s ease; /* Efeito de hover */
+}
+
+/* Ajustes específicos para dispositivos móveis */
+@media (max-width: 768px) {
+  .rowo .col-lg-6 .hero__text a {
+    font-size: clamp(1em, 4vw, 1.5em); /* Aumenta a responsividade em telas menores */
+    padding: 12px 24px; /* Ajusta o padding para um botão maior */
+  }
+}
+
+@media (max-width: 480px) {
+  .rowo .col-lg-6 .hero__text a {
+    font-size: clamp(1em, 5vw, 1.8em); /* Aumenta ainda mais em dispositivos muito pequenos */
+    padding: 14px 28px; /* Ajusta o padding para um botão maior */
+  }
 }
 
 .rowo .col-lg-6 .hero__text a:hover {
