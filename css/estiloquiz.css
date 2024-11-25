@@ -73,7 +73,7 @@ h1 {
 .info_box,
 .quiz_box,
 .result_box{
-  position: absolute;
+  position:relative;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -91,7 +91,6 @@ h1 {
   background-color: #080312;
   color: white;
 }
-
 
 
 
@@ -607,6 +606,10 @@ footer .next_btn:hover{
 
 }
 
+.start_btn{
+  text-align: center;
+}
+
 .text{
   color: black;
 }
@@ -615,7 +618,13 @@ footer .next_btn:hover{
   padding: 3%;
 }
 
+.divquiz{
+  position: absolute;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 
+}
 
 @media (max-width: 720px){
   .quiz_box header .title{
@@ -662,7 +671,10 @@ footer .next_btn:hover{
 
   .divquiz{
     padding: auto;
+    position: absolute;
+    
   }
+
 }
 
 @media(max-width: 465px){
@@ -691,6 +703,20 @@ footer .next_btn:hover{
 }
   footer .next_btn {
     font-size: 0.8rem;
+
+
+}
+
+
+.result_box.activeResult{
+  margin-top: -160%;
 }
 }
 
+.result_box.activeResult{
+  margin-top: -50%;
+}
+
+a{
+  text-decoration: none;
+}

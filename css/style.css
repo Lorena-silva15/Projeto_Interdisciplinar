@@ -812,7 +812,7 @@ padding-top: 20%;}
 }
 
 .team__btn {
-  position: absolute;
+  position:relative;
   right: 0;
   bottom: 0;
 }
@@ -2050,12 +2050,29 @@ height: 70px;
      
       
     }
+
+
+
+@media screen and (min-width:974px){
+  .row{
+    display: flex;
+  }
+  
+}
 /* Medium Device = 1200px */
 @media only screen and (min-width: 780px){
   .header__nav__menu {
     margin-right: 25px;
     display:inline-block
   }
+
+
+
+  .apre{
+    padding-top: 20%;
+  }
+
+
   .header__nav__option{
     display: inline-block;
 
@@ -2079,6 +2096,13 @@ height: 70px;
   .counter__content {
     padding: 0px 145px 0 50px;
   }
+
+  .counter__content .row{
+    padding-top: 10%;
+  padding-bottom: 10%;
+
+  }
+  
 
   .counter__item.second__item {
     margin-top: -210px;
@@ -2224,6 +2248,9 @@ width: 90%;
     max-width: 690px !important;
   }
 
+  .apre{
+    padding-top: 30%;
+  }
 
  
   .blog__item{
@@ -2548,6 +2575,7 @@ width: 90%;
 }
 
 
+
 }
 
 
@@ -2572,6 +2600,11 @@ width: 90%;
     font-size: 30px;
     line-height: 40px;
   }
+
+  .apre{
+    padding-top: 30%;
+  }
+
 
   .blog__item{
     height: 30rem;
@@ -2617,6 +2650,51 @@ width: 90%;
     padding: 30px 40px 35px 35px;
 
 
+  }
+
+  .slicknav_menu {
+    background: transparent;
+    padding: 0;
+    display: block;
+  }
+
+ 
+
+  .slicknav_nav .slicknav_row{
+    padding: 7px 0;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+ 
+
+  .slicknav_nav a:hover {
+    border-radius: 0;
+    background: transparent;
+    color: #111111;
+  }
+
+  .slicknav_nav {
+    background: #222222;
+  }
+
+  .slicknav_btn {
+    position: absolute;
+    right: 10px;
+    top: 26px;
+    background: hsl(190, 100%, 45%);
+  }
+
+  .header .container {
+    position: relative;
+  }
+
+  .header__nav__option {
+    display: none;
+  }
+  .header .container,.containerc {
+    position: relative;
   }
 
   
@@ -2702,6 +2780,8 @@ capa-content ul li {
   display: flex;
 }
 
+
+.title{font-size: 110%;}
 
 }
 
@@ -2855,10 +2935,10 @@ a{
 }
 
 #prompt {
-  bottom: ;
-  left: 18rem;
+  
+  
   z-index: 20;
-  font-size: 96px;
+  font-size: 240%;
   font-weight: bold;
   transition: 300ms ease-in-out-out;
   position: absolute;
@@ -3162,7 +3242,6 @@ a{
 }
 
 .apre{
- padding-top: 10%;
  padding-bottom: 5%;
  text-align: center;
  width: 80%;
@@ -3205,6 +3284,7 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  
 }
 
 .col-lg-10{
@@ -3213,9 +3293,12 @@ a{
 }
 
 .col-lg-2{
-  width: fit-content;
+  width: auto
 }
 
+.counter__content .row{
+  padding-top: 30%;
+padding-bottom: 10%;
 
-
+}
 
