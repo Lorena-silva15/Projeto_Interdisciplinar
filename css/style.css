@@ -3275,10 +3275,38 @@ a{
   text-align: center;
 }
 
-.rowo .col-lg-6 .hero__text{
-  width: 100%;
-  background-color: #5f3dbda2;
-  text-align: center;
+.rowo .col-lg-6 .hero__text {
+  width: 90%; /* Permite que o quadrado se ajuste ao tamanho da tela */
+  max-width: 600px; /* Define uma largura máxima para telas grandes */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  background-color: #5f3dbda2; /* Fundo semitransparente */
+  text-align: center; /* Centraliza o texto dentro do quadrado */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+}
+
+/* Ajusta o tamanho do texto para responsividade */
+.rowo .col-lg-6 .hero__text h2 {
+  font-size: clamp(1.5em, 4vw, 2.5em); /* Tamanho varia com a largura da tela */
+  color: #fff; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.rowo .col-lg-6 .hero__text a {
+  font-size: clamp(1em, 3vw, 1.2em); /* Botão responsivo */
+  color: #fff; /* Texto do botão */
+  background-color: #3b2c85; /* Fundo do botão */
+  padding: 10px 20px; /* Tamanho do botão */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  text-decoration: none; /* Remove o sublinhado */
+  display: inline-block; /* Mantém espaçamento correto no botão */
+  margin-top: 15px; /* Espaçamento superior para separar do título */
+  transition: background-color 0.3s ease; /* Efeito de hover */
+}
+
+.rowo .col-lg-6 .hero__text a:hover {
+  background-color: #2a2163; /* Fundo do botão ao passar o mouse */
 }
 
 .row{
